@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "appointments",
+  "info": {
+    "name": "Appointment",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "appointmentDate": {
+      "type": "date"
+    },
+    "appointmentTime": {
+      "type": "time"
+    },
+    "appointmentType": {
+      "type": "enumeration",
+      "enum": [
+        "Service",
+        "Consultation"
+      ]
+    }
+  }
+}
